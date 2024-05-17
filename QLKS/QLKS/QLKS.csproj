@@ -250,6 +250,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Admin\acount.js" />
     <Content Include="Content\Admin\css\sb-admin.css" />
     <Content Include="Content\Admin\css\sb-admin.min.css" />
     <Content Include="Content\Admin\js\sb-admin-charts.js" />

@@ -63,6 +63,7 @@
     <Property Name="ti_le_phu_thu" Type="int" />
     <Property Name="anh" Type="nvarchar" MaxLength="300" />
     <Property Name="so_luong_nguoi" Type="int" />
+    <Property Name="tien_ich" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="tblNhanVien">
     <Key>
@@ -95,6 +96,7 @@
     <Property Name="ma_nhan_phong" Type="varchar" MaxLength="250" />
     <Property Name="add_giuong" Type="int" />
     <Property Name="price_add_giuong" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="deposit" Type="int" />
   </EntityType>
   <EntityType Name="tblPhong">
     <Key>

@@ -17,6 +17,10 @@
 
     <link href="~/Content/Admin/css/sb-admin.css" rel="stylesheet">
     <link href="~/Content/Site.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Content/Admin/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Content/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -156,7 +160,7 @@
                         </strong>
                         <span class="small float-right text-muted">@item.ngay_gui</span>
                         
-                        <div class="dropdown-message small">
+                        <div class="dropdown-message small" style="white-space: normal !important; text-overflow: unset !important; overflow: unset !important ">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         <i>@if (item.ma_kh == null)
                         {
@@ -328,7 +332,7 @@
         <footer class="sticky-footer">
             <div class="container">
                 <div class="text-center">
-                    <small>Copyright © GHotel 2018</small>
+                    <small>Copyright © VELOURS HOTEL 2018</small>
                 </div>
             </div>
         </footer>
@@ -354,9 +358,7 @@
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JavaScript-->
-        <script src="~/Content/Admin/vendor/jquery/jquery.min.js"></script>
-        <script src="~/Content/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
         <!-- Core plugin JavaScript-->
         <script src="~/Content/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
         <!-- Page level plugin JavaScript-->

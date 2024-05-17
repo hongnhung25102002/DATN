@@ -16,7 +16,7 @@ namespace QLKS.Areas.Admin  .Controllers.Admin
         {
             Tab();
             DateTime datenow = DateTime.Parse(DateTime.Now.ToShortDateString());
-            ViewBag.title_char1 = "Biểu đồ doanh thu 15 ngày gàn nhất";
+            ViewBag.title_char1 = "Biểu đồ doanh thu 15 ngày gần nhất";
             Char1(datenow.AddDays(-14), datenow);
             Char2(datenow);
             Char3();

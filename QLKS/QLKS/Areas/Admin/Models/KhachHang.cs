@@ -11,6 +11,7 @@ namespace QLKS.Areas.Admin.Models
         public String socmt { get; set; }
         public String tuoi { get; set; }
         public String sodt { get; set; }
+        public decimal tienphongPhu { get; set; }
         public KhachHang()
         {
         }

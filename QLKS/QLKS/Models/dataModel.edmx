@@ -68,6 +68,7 @@
           <Property Name="ti_le_phu_thu" Type="int" />
           <Property Name="anh" Type="nvarchar" MaxLength="300" />
           <Property Name="so_luong_nguoi" Type="int" />
+          <Property Name="tien_ich" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="tblNhanVien">
           <Key>
@@ -100,6 +101,7 @@
           <Property Name="ma_nhan_phong" Type="varchar" MaxLength="250" />
           <Property Name="add_giuong" Type="int" />
           <Property Name="price_add_giuong" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="deposit" Type="int" />
         </EntityType>
         <EntityType Name="tblPhong">
           <Key>
@@ -453,6 +455,7 @@
           <Property Name="anh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="tblPhongs" Relationship="Self.fk_ma_lp" FromRole="tblLoaiPhong" ToRole="tblPhong" />
           <Property Name="so_luong_nguoi" Type="Int32" />
+          <Property Name="tien_ich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="tblNhanVien">
           <Key>
@@ -491,6 +494,7 @@
           <Property Name="ma_nhan_phong" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="add_giuong" Type="Int32" />
           <Property Name="price_add_giuong" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="deposit" Type="Int32" />
         </EntityType>
         <EntityType Name="tblPhong">
           <Key>
@@ -842,6 +846,7 @@
           <EntitySetMapping Name="tblLoaiPhongs">
             <EntityTypeMapping TypeName="dataQLKSModel.tblLoaiPhong">
               <MappingFragment StoreEntitySet="tblLoaiPhong">
+                <ScalarProperty Name="tien_ich" ColumnName="tien_ich" />
                 <ScalarProperty Name="so_luong_nguoi" ColumnName="so_luong_nguoi" />
                 <ScalarProperty Name="loai_phong" ColumnName="loai_phong" />
                 <ScalarProperty Name="mo_ta" ColumnName="mo_ta" />
@@ -868,6 +873,7 @@
           <EntitySetMapping Name="tblPhieuDatPhongs">
             <EntityTypeMapping TypeName="dataQLKSModel.tblPhieuDatPhong">
               <MappingFragment StoreEntitySet="tblPhieuDatPhong">
+                <ScalarProperty Name="deposit" ColumnName="deposit" />
                 <ScalarProperty Name="price_add_giuong" ColumnName="price_add_giuong" />
                 <ScalarProperty Name="add_giuong" ColumnName="add_giuong" />
                 <ScalarProperty Name="ma_nhan_phong" ColumnName="ma_nhan_phong" />

@@ -49,15 +49,21 @@
                         <th>
                             Tên khách hàng
                         </th>
+
                         <th>
                             Ngày vào
                         </th>
                         <th>
                             Ngày dự kiến trả phòng
                         </th>
+
                         <th>
                             Ngày trả phòng
                         </th>
+                        <th>
+                           Số người
+                        </th>
+
                         <th>
                             Tiền phòng
                         </th>
@@ -115,6 +121,9 @@
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.ngay_tra_phong)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.tblPhieuDatPhong.tblPhong.tblLoaiPhong.so_luong_nguoi)
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.tien_phong)

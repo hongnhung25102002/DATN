@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@ViewBag.Title</title>
+    <title>Velours Hotel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Website Template by GetTemplates.co" />
     <meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -68,10 +68,10 @@
 </head>
 <body>
 
-    <div class="gtco-loader"></div>
+   
 
     <div id="page">
-
+        @*<div id="google_translate_element"></div>*@
 
         <!-- <div class="page-inner"> -->
         <nav class="gtco-nav" role="navigation">
@@ -117,6 +117,13 @@
                                 }
                             </li>
                             <li class="btn-cta"><a href="@Url.Action("BookRoom", "Home")"><span>Đặt phòng</span></a></li>
+                            @*<li class="has-dropdown">
+                                <a href="#">Ngôn ngữ</a>
+                                <ul class="dropdown">
+                                    <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en"><img src="https://www.solodev.com/assets/google-translate/flag-usa.png" alt="USA"></a></li>
+                                    <li><a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN"><img src="https://www.solodev.com/assets/google-translate/flag-china.png" alt="CHINA"></a></li>
+                                </ul>
+                            </li>*@
                         </ul>
                     </div>
                 </div>
@@ -138,18 +145,18 @@
                         <div class="gtco-widget">
                             <h3>Get In Touch</h3>
                             <ul class="gtco-quick-contact">
-                                <li><a href="#"><i class="icon-phone"></i> +01677915896</a></li>
-                                <li><a href="#"><i class="icon-mail2"></i> admin@ghotel.site</a></li>
-                                <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+                                <li><a href="#"><i class="icon-phone"></i> 0818192256</a></li>
+                                <li><a href="#"><i class="icon-mail2"></i> velourshotel@gmail.com</a></li>
+                                <li><a href="/Home/Contact"><i class="icon-chat"></i> Live Chat</a></li>
                             </ul>
                         </div>
                         <div class="gtco-widget">
                             <h3>Get Social</h3>
                             <ul class="gtco-social-icons">
-                                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                                <li><a href="https://x.com/eunbyung2510"><i class="icon-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=61559915875789&is_tour_dismissed"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/tr%E1%BA%A7n-h%E1%BB%93ng-nhung-3320b5287/"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="https://dribbble.com/Nhung0152"><i class="icon-dribbble"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -157,7 +164,7 @@
                     <div class="col-md-12 text-center copyright">
                         <p>
                             <small class="block">&copy; 2018. All Rights Reserved.</small>
-                            <small class="block">Designed and Developed by <a href="https://fb.com/tgiangdev" target="_blank">Trường Giang</a></small>
+                            <small class="block">Designed and Developed by <a href="https://www.facebook.com/hongnhung.tran.10420321/" target="_blank">Hồng Nhung</a></small>
                         </p>
                     </div>
 
@@ -175,7 +182,7 @@
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
 
-   
+
     <!-- Waypoints -->
     <script src="~/Content/Home/js/jquery.waypoints.min.js"></script>
     <!-- Carousel -->
@@ -197,5 +204,31 @@
     <!-- Main -->
     <script src="~/Content/Home/js/main.js"></script>
 
+    <script>
+        //$(document).ready(function () {
+        //    googleTranslateElementInit();
+        //    $(".goog-te-combo").val("ja");
+           
+        //});
+
+
+        //function googleTranslateElementInit() {
+        //    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+
+        //}
+        //function googleTranslateElementInit() {
+        //    new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
+        //}
+        //jQuery('.lang-select').click(function () {
+        //    var theLang = jQuery(this).attr('data-lang');
+        //    jQuery('.goog-te-combo').val(theLang);
+
+        //    //alert(jQuery(this).attr('href'));
+        //    window.location = jQuery(this).attr('href');
+        //    location.reload();
+
+        //});
+    </script>
+    @*<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>*@
 </body>
 </html>

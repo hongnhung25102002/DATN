@@ -26,6 +26,7 @@ namespace QLKS.Models
         public Nullable<int> ti_le_phu_thu { get; set; }
         public string anh { get; set; }
         public Nullable<int> so_luong_nguoi { get; set; }
+        public string tien_ich { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblPhong> tblPhongs { get; set; }

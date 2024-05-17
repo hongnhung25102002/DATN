@@ -87,7 +87,7 @@ namespace QLKS.Controllers.Home
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Login data is incorrect!");
+                    ModelState.AddModelError("", "Thông tin đăng nhập không chính xác!");
                 }
             }
 
@@ -224,7 +224,7 @@ namespace QLKS.Controllers.Home
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Login data is incorrect!");
+                    ModelState.AddModelError("", "Thông tin đăng nhập không chính xác!");
                 }
             }
             return View(objUser);

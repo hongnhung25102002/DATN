@@ -39,7 +39,7 @@
                             @Html.DisplayName("Số phòng")
                         </th>
                         <th>
-                            @Html.DisplayName("Mã nhận phòng")
+                            @Html.DisplayName("Số người")
                         </th>
                         <th>
                             @Html.DisplayName("Tình trạng")
@@ -73,7 +73,7 @@
                         @Html.DisplayFor(modelItem => item.tblPhong.so_phong)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.ma_nhan_phong)
+                        @Html.DisplayFor(modelItem => item.tblPhong.tblLoaiPhong.so_luong_nguoi)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.tblTinhTrangPhieuDatPhong.tinh_trang)
@@ -108,7 +108,7 @@ else if (item.ma_tinh_trang == 2 || item.ma_tinh_trang == 4)
                         @Html.DisplayFor(modelItem => item.tblPhong.so_phong)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.ma_nhan_phong)
+                        @Html.DisplayFor(modelItem => item.tblPhong.tblLoaiPhong.so_luong_nguoi)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.tblTinhTrangPhieuDatPhong.tinh_trang)
@@ -141,7 +141,7 @@ else
                         @Html.DisplayFor(modelItem => item.tblPhong.so_phong)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.ma_nhan_phong)
+                        @Html.DisplayFor(modelItem => item.tblPhong.tblLoaiPhong.so_luong_nguoi)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.tblTinhTrangPhieuDatPhong.tinh_trang)

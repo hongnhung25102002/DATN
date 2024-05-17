@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Configuration;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -78,7 +79,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
         }
 
 
-        public ActionResult SelectRoom(String dateE,int loai_phong,int so_nguoi)
+        public ActionResult SelectRoom(String dateE,int loai_phong)
         {
             if (dateE == null)
             {
@@ -87,7 +88,9 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             ViewBag.ma_kh = new SelectList(db.tblKhachHangs, "ma_kh", "ma_kh");
             DateTime ngay_ra = (DateTime.Parse(dateE)).AddHours(12);
             ViewBag.ngay_ra = ngay_ra;
-            var s = db.tblPhongs.Where(t => !(db.tblPhieuDatPhongs.Where(m=>(m.ma_tinh_trang == 1 || m.ma_tinh_trang ==2) && (m.ngay_ra > DateTime.Now && m.ngay_ra < ngay_ra))).Select(m => m.ma_phong).ToList().Contains(t.ma_phong) && t.ma_tinh_trang == 1 && t.tblLoaiPhong.loai_phong == loai_phong && t.tblLoaiPhong.so_luong_nguoi >= so_nguoi);
+            
+            var s = db.tblPhongs.Where(t => !(db.tblPhieuDatPhongs.Where(m => (m.ma_tinh_trang == 1 || m.ma_tinh_trang == 2) && (m.ngay_ra > DateTime.Now && m.ngay_ra < ngay_ra))).Select(m => m.ma_phong).ToList().Contains(t.ma_phong) && t.ma_tinh_trang == 1 && t.tblLoaiPhong.loai_phong == loai_phong).ToList() ;
+            
             ViewBag.ma_phong = new SelectList(s, "ma_phong", "so_phong");
             ViewBag.ma_tinh_trang = new SelectList(db.tblTinhTrangPhieuDatPhongs, "ma_tinh_trang", "tinh_trang");
             return View();
@@ -99,7 +102,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(String radSelect, [Bind(Include = "ma_pdp,ma_kh,ngay_dat,ngay_vao,ngay_ra,ma_phong,ma_tinh_trang")] tblPhieuDatPhong tblPhieuDatPhong, [Bind(Include = "hoten,socmt,tuoi,sodt")] KhachHang kh)
+        public ActionResult Create(String radSelect, [Bind(Include = "ma_pdp,ma_kh,ngay_dat,ngay_vao,ngay_ra,ma_phong,ma_tinh_trang")] tblPhieuDatPhong tblPhieuDatPhong, [Bind(Include = "hoten,socmt,tuoi,sodt")] KhachHang kh, String selectBookRoom)
         {
             System.Diagnostics.Debug.WriteLine("SS :"+radSelect);
             if (radSelect.Equals("rad2"))
@@ -110,14 +113,22 @@ namespace QLKS.Areas.Admin.Controllers.Admin
                 String ttkh = JsonConvert.SerializeObject(likh);
                 tblPhieuDatPhong.thong_tin_khach_thue = ttkh;
             }
-
-                tblPhieuDatPhong.ma_tinh_trang = 1;
-                tblPhieuDatPhong.ngay_vao = DateTime.Now;
-                tblPhieuDatPhong.ngay_dat = DateTime.Now;
-                db.tblPhieuDatPhongs.Add(tblPhieuDatPhong);
-                db.SaveChanges();
-                int ma = tblPhieuDatPhong.ma_pdp;
-                return RedirectToAction("Add","HoaDon",new { id = ma });
+            var lstMap = new List<int>();
+            tblPhieuDatPhong.ma_tinh_trang = 1;
+            tblPhieuDatPhong.ngay_vao = DateTime.Now;
+            tblPhieuDatPhong.ngay_dat = DateTime.Now;
+            if (!string.IsNullOrEmpty(selectBookRoom))
+            {
+                string[] strTabTypes = selectBookRoom.Split(',');
+                foreach (var item in strTabTypes)
+                {
+                    tblPhieuDatPhong.ma_phong = Convert.ToInt32(item);
+                    db.tblPhieuDatPhongs.Add(tblPhieuDatPhong);
+                }               
+            }
+            db.SaveChanges();
+            int ma = tblPhieuDatPhong.ma_pdp;
+            return RedirectToAction("Add","HoaDon",new { id = ma });
 
             ViewBag.ma_kh = new SelectList(db.tblKhachHangs, "ma_kh", "ma_kh", tblPhieuDatPhong.ma_kh);
             ViewBag.ma_phong = new SelectList(db.tblPhongs, "ma_phong", "so_phong", tblPhieuDatPhong.ma_phong);

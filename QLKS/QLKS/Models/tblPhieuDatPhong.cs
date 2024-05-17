@@ -34,6 +34,7 @@ namespace QLKS.Models
         public string ma_nhan_phong { get; set; }
         public Nullable<int> add_giuong { get; set; }
         public Nullable<decimal> price_add_giuong { get; set; }
+        public Nullable<int> deposit { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tblHoaDon> tblHoaDons { get; set; }

@@ -155,16 +155,24 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <div class="col-md-12">
-                            <label style="color:red">Thêm giườn công thêm 30% giá phòng</label>
-                            <h3 style="line-height:70px">Thêm giường</h3>
+                            <label style="color:red">Thêm giường công thêm 30% giá phòng</label>
                             <style>
                                 .custom-label label {
                                     padding: 0px;
+                                    margin: 0px;
+                                }
+                                .custom-label .fonrmat-check-box {
+                                    width: 20px;
+                                    margin-right: 10px;
                                 }
                             </style>
                             <div class="col-md-3 custom-label" style="padding: 0px">
-                                @Html.Label("Số giường", htmlAttributes: new { @class = "control-label col-md-12"})
-                                @Html.TextBox("add_giuong", 0, new { @class = "form-control", type = "number" })                                
+                                <div class="" style="display: inline-flex;">
+                                    @Html.TextBox("add_giuong", 1, new { @class = "fonrmat-check-box", @readonly = "readonly", @id = "add_giuong", @type = "checkbox" })
+                                    @Html.Label("Thêm giường", htmlAttributes: new { @class = "control-label mr-1", @for = "add_giuong" })
+
+
+                                </div>
                             </div>
                         </div>
                     </div>

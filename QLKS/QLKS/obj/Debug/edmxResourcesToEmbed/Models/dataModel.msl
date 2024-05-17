@@ -62,6 +62,7 @@
     <EntitySetMapping Name="tblLoaiPhongs">
       <EntityTypeMapping TypeName="dataQLKSModel.tblLoaiPhong">
         <MappingFragment StoreEntitySet="tblLoaiPhong">
+          <ScalarProperty Name="tien_ich" ColumnName="tien_ich" />
           <ScalarProperty Name="so_luong_nguoi" ColumnName="so_luong_nguoi" />
           <ScalarProperty Name="loai_phong" ColumnName="loai_phong" />
           <ScalarProperty Name="mo_ta" ColumnName="mo_ta" />
@@ -88,6 +89,7 @@
     <EntitySetMapping Name="tblPhieuDatPhongs">
       <EntityTypeMapping TypeName="dataQLKSModel.tblPhieuDatPhong">
         <MappingFragment StoreEntitySet="tblPhieuDatPhong">
+          <ScalarProperty Name="deposit" ColumnName="deposit" />
           <ScalarProperty Name="price_add_giuong" ColumnName="price_add_giuong" />
           <ScalarProperty Name="add_giuong" ColumnName="add_giuong" />
           <ScalarProperty Name="ma_nhan_phong" ColumnName="ma_nhan_phong" />

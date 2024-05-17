@@ -288,3 +288,409 @@ D:\learn\DOAN_QLKS\05-05\05-05\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs
 D:\learn\DOAN_QLKS\05-05\05-05\QLKS\QLKS\obj\Debug\QLKS.csproj.CopyComplete
 D:\learn\DOAN_QLKS\05-05\05-05\QLKS\QLKS\obj\Debug\QLKS.dll
 D:\learn\DOAN_QLKS\05-05\05-05\QLKS\QLKS\obj\Debug\QLKS.pdb
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\ApplicationInsights.config
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\QLKS.dll.config
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\QLKS.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\QLKS.pdb
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Antlr3.Runtime.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.SqlServer.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.Web.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.ApplicationInsights.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Security.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Web.Infrastructure.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Newtonsoft.Json.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Owin.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Helpers.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Mvc.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Optimization.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Razor.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Deployment.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Razor.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\WebGrease.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.SqlServer.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Security.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Helpers.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Mvc.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Optimization.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Razor.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Deployment.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Razor.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Antlr3.Runtime.pdb
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Newtonsoft.Json.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.ApplicationInsights.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.Web.xml
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.csproj.CopyComplete
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.dll
+D:\learn\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.pdb
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\ApplicationInsights.config
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\QLKS.dll.config
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\QLKS.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\QLKS.pdb
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Antlr3.Runtime.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.SqlServer.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.Web.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.ApplicationInsights.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Security.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Web.Infrastructure.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Newtonsoft.Json.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Owin.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Helpers.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Mvc.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Optimization.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Razor.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Deployment.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Razor.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\WebGrease.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\EntityFramework.SqlServer.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.Owin.Security.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Helpers.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Mvc.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Optimization.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.Razor.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Deployment.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\System.Web.WebPages.Razor.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Antlr3.Runtime.pdb
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Newtonsoft.Json.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.ApplicationInsights.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\bin\Microsoft.AI.Web.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.csproj.Up2Date
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\QLKS\QLKS\QLKS\obj\Debug\QLKS.pdb
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\ApplicationInsights.config
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\QLKS.dll.config
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\QLKS.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\QLKS.pdb
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Antlr3.Runtime.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\EntityFramework.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\EntityFramework.SqlServer.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.Web.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.ApplicationInsights.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.Owin.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.Owin.Security.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.Web.Infrastructure.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Newtonsoft.Json.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Owin.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Helpers.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Mvc.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Optimization.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Razor.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.WebPages.Deployment.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.WebPages.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.WebPages.Razor.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\WebGrease.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\EntityFramework.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\EntityFramework.SqlServer.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.Owin.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.Owin.Security.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Helpers.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Mvc.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Optimization.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.Razor.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.WebPages.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.WebPages.Deployment.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\System.Web.WebPages.Razor.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Antlr3.Runtime.pdb
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Newtonsoft.Json.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.ApplicationInsights.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\bin\Microsoft.AI.Web.xml
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\obj\Debug\QLKS.csproj.CopyComplete
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\obj\Debug\QLKS.dll
+D:\learn\DOAN_QLKS\10-5\QLKS\QLKS\obj\Debug\QLKS.pdb
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\ApplicationInsights.config
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\QLKS.dll.config
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\QLKS.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\QLKS.pdb
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Antlr3.Runtime.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\EntityFramework.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\EntityFramework.SqlServer.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.Web.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.ApplicationInsights.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.Owin.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.Owin.Security.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.Web.Infrastructure.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Newtonsoft.Json.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Owin.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Helpers.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Mvc.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Optimization.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Razor.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.WebPages.Deployment.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.WebPages.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.WebPages.Razor.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\WebGrease.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\EntityFramework.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\EntityFramework.SqlServer.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.Owin.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.Owin.Security.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Helpers.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Mvc.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Optimization.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.Razor.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.WebPages.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.WebPages.Deployment.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\System.Web.WebPages.Razor.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Antlr3.Runtime.pdb
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Newtonsoft.Json.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.ApplicationInsights.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\bin\Microsoft.AI.Web.xml
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\obj\Debug\QLKS.csproj.Up2Date
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\obj\Debug\QLKS.dll
+D:\THN\ĐATN\THN\Finally\QLKS\QLKS\obj\Debug\QLKS.pdb
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\ApplicationInsights.config
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\QLKS.dll.config
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\QLKS.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\QLKS.pdb
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Antlr3.Runtime.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\EntityFramework.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\EntityFramework.SqlServer.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.Web.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.ApplicationInsights.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.Owin.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.Owin.Security.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.Web.Infrastructure.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Newtonsoft.Json.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Owin.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Helpers.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Mvc.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Optimization.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Razor.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.WebPages.Deployment.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.WebPages.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.WebPages.Razor.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\WebGrease.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\EntityFramework.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\EntityFramework.SqlServer.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.Owin.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.Owin.Security.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Helpers.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Mvc.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Optimization.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.Razor.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.WebPages.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.WebPages.Deployment.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\System.Web.WebPages.Razor.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Antlr3.Runtime.pdb
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Newtonsoft.Json.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.ApplicationInsights.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\bin\Microsoft.AI.Web.xml
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\obj\Debug\QLKS.csproj.CopyComplete
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\obj\Debug\QLKS.dll
+D:\learn\DOAN_QLKS\17-05\QLKS\QLKS\obj\Debug\QLKS.pdb
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\ApplicationInsights.config
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\QLKS.dll.config
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\QLKS.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\QLKS.pdb
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Antlr3.Runtime.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\EntityFramework.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\EntityFramework.SqlServer.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.Web.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.ApplicationInsights.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.Owin.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.Owin.Security.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.Web.Infrastructure.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Newtonsoft.Json.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Owin.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Helpers.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Mvc.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Optimization.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Razor.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.WebPages.Deployment.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.WebPages.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.WebPages.Razor.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\WebGrease.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\EntityFramework.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\EntityFramework.SqlServer.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.Owin.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.Owin.Security.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Helpers.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Mvc.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Optimization.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.Razor.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.WebPages.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.WebPages.Deployment.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\System.Web.WebPages.Razor.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Antlr3.Runtime.pdb
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Newtonsoft.Json.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.ApplicationInsights.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\bin\Microsoft.AI.Web.xml
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\obj\Debug\QLKS.csproj.Up2Date
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\obj\Debug\QLKS.dll
+D:\THN\ĐATN\THN\Finally\17-05\QLKS\QLKS\obj\Debug\QLKS.pdb
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\ApplicationInsights.config
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\QLKS.dll.config
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\QLKS.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\QLKS.pdb
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Antlr3.Runtime.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\EntityFramework.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\EntityFramework.SqlServer.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.Web.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.ApplicationInsights.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.Owin.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.Owin.Security.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.Web.Infrastructure.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Newtonsoft.Json.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Owin.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Helpers.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Mvc.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Optimization.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Razor.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.WebPages.Deployment.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.WebPages.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.WebPages.Razor.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\WebGrease.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\EntityFramework.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\EntityFramework.SqlServer.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.Owin.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.Owin.Security.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Helpers.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Mvc.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Optimization.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.Razor.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.WebPages.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.WebPages.Deployment.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\System.Web.WebPages.Razor.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Antlr3.Runtime.pdb
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Newtonsoft.Json.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.ApplicationInsights.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.DependencyCollector.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.WindowsServer.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\bin\Microsoft.AI.Web.xml
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\obj\Debug\QLKS.csproj.AssemblyReference.cache
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cache
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\obj\Debug\QLKS.csproj.Up2Date
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\obj\Debug\QLKS.dll
+D:\Hoc-Tap\Đồ Án\DOAN_QLKS\18-05\QLKS\QLKS\obj\Debug\QLKS.pdb

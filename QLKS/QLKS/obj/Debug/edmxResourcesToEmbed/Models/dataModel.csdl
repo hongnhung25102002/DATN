@@ -74,6 +74,7 @@
     <Property Name="anh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="tblPhongs" Relationship="Self.fk_ma_lp" FromRole="tblLoaiPhong" ToRole="tblPhong" />
     <Property Name="so_luong_nguoi" Type="Int32" />
+    <Property Name="tien_ich" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="tblNhanVien">
     <Key>
@@ -112,6 +113,7 @@
     <Property Name="ma_nhan_phong" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="add_giuong" Type="Int32" />
     <Property Name="price_add_giuong" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="deposit" Type="Int32" />
   </EntityType>
   <EntityType Name="tblPhong">
     <Key>

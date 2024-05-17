@@ -32,7 +32,7 @@
                         @Html.Hidden("tien_dich_vu", (Double)ViewBag.tien_dich_vu)
                         @try
                         {
-                            @Html.Hidden("phu_thu", (Double)ViewBag.phu_thu)
+                            @*@Html.Hidden("phu_thu", (Double)ViewBag.phu_thu)*@
                             @Html.Hidden("tong_tien", (Double)ViewBag.tong_tien)
                         }
                         catch
@@ -137,31 +137,38 @@
                                     <td>@Model.tblPhieuDatPhong.price_add_giuong.Value.ToString("#,###")</td>
                                 </tr>
                             }
+                            @if (ViewBag.TienPhuThuStr != null && ViewBag.TienPhuThuStr != "")
+                            {
+                                <tr>
+                                    <td>Phụ thu</td>
+                                    <td>@ViewBag.TienPhuThuStr</td>
+                                </tr>
+                            }
 
                             @*<tr>
-                                <td>Phụ thu</td>
-                                <td>
-                                    <table width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th>Giá phòng</th>
-                                                <th>Số ngày phụ thu</th>
-                                                <th>Tỉ lệ phụ thu</th>
-                                                <th>Thành tiền</th>
-                                            </tr>
+        <td>Phụ thu</td>
+        <td>
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>Giá phòng</th>
+                        <th>Số ngày phụ thu</th>
+                        <th>Tỉ lệ phụ thu</th>
+                        <th>Thành tiền</th>
+                    </tr>
 
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>@Model.tblPhieuDatPhong.tblPhong.tblLoaiPhong.gia</td>
-                                                <td>@ViewBag.so_ngay_phu_thu</td>
-                                                <td>@Model.tblPhieuDatPhong.tblPhong.tblLoaiPhong.ti_le_phu_thu</td>
-                                                <td>@ViewBag.phu_thu</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                </tr>*@
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.tblPhieuDatPhong.tblPhong.tblLoaiPhong.gia</td>
+                        <td>@ViewBag.so_ngay_phu_thu</td>
+                        <td>@Model.tblPhieuDatPhong.tblPhong.tblLoaiPhong.ti_le_phu_thu</td>
+                        <td>@ViewBag.phu_thu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        </tr>*@
                         </table>
                     </div>
                 </div>
@@ -231,9 +238,50 @@
             <hr />
             <div class="form-group">
                 @Html.Label("Tổng tiền", htmlAttributes: new { @class = "control-label col-md-8" })
-                <div class="col-md-10">
-                    @Html.TextBox("tong_tien", ((Double)ViewBag.tong_tien).ToString("C"), new { @class = "form-control", @readonly = "readonly" })
-                </div>
+                @if (ViewBag.tong_tien != null)
+                {
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" readonly="readonly" value="@(((Double)ViewBag.tong_tien).ToString("C"))" />
+                        @*@Html.TextBox("tong_tien", ((Double)ViewBag.tong_tien).ToString("C"), new { @class = "form-control", @readonly = "readonly" })*@
+                    </div>
+                }
+
+                @if (ViewBag.TinhTrangThanhToan != null)
+                {
+                    @*@Html.Label("Trạng thái thanh toán", htmlAttributes: new { @class = "control-label col-md-8" })*@
+                    if ((int)ViewBag.TinhTrangThanhToan == 1)
+                    {
+                        <div class="col-md-10">
+                            <label class="control-label">Thanh toán 50%</label>
+                            <input type="text" class="form-control" readonly="readonly" value="@(((Double)ViewBag.tong_tien50).ToString("C"))" />
+                        </div>
+                        if (ViewBag.TienPhuThuStr != null && ViewBag.TienPhuThuStr != "")
+                        {
+                            <div class="col-md-10">
+                                <label class="control-label">Phụ thu</label>
+                                <input type="text" class="form-control" readonly="readonly" value="@(((Double)ViewBag.TienPhuThu).ToString("C"))" />
+                            </div>
+                        }
+                        <div class="col-md-10">
+                            <label class="control-label">Tiền còn lại</label>
+                            <input type="text" class="form-control" readonly="readonly" value="@(((Double)ViewBag.tong_tien_con_lai).ToString("C"))" />
+                        </div>
+
+
+                        @*<div class="col-md-10">
+                            <label class="control-label">Tiền còn lại</label>
+                            <input type="text" class="form-control" readonly="readonly" value="@(((Double)ViewBag.tong_tien_con_lai).ToString("C"))" />
+                        </div>*@
+                    }
+                    else
+                    {
+                        <div class="col-md-10">
+                            <label class="control-label">Đã thanh toán</label>
+                            <input type="text" class="form-control" readonly="readonly" value="@(((Double)ViewBag.tong_tien).ToString("C"))" />
+                        </div>
+                    }
+                }
+
             </div>
 
         </div>

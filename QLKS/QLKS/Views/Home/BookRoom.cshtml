@@ -78,35 +78,33 @@
                     <div class="form-group">
                         @Html.Label("Tổng tiền", htmlAttributes: new { @class = "control-label col-md-3" })
                         <div class="col-md-9">
-                            @Html.TextBox("tong_tien", (String)ViewBag.tong_tien, new { @class = "form-control", @readonly = "readonly" })
+                            @Html.TextBox("tong_tien", (String)ViewBag.tong_tien, new { @class = "form-control tong-tien", @readonly = "readonly" })
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        @Html.Label("Tiện ích", htmlAttributes: new { @class = "control-label col-md-3" })
-                        <div class="col-md-9">
+                    <!--<div class="form-group">
+        <div class="col-md-9">
 
-                            <input type="checkbox" name="checkbox" id="gym" value="1">
-                            <label for="gym">Gym</label>
+            <input type="checkbox" name="checkbox" id="gym" value="1">
+            <label for="gym">Gym</label>
 
-                            <input type="checkbox" name="checkbox" id="xe_dep" value="2">
-                            <label for="xe_dep">Xe đạp</label>
+            <input type="checkbox" name="checkbox" id="xe_dep" value="2">
+            <label for="xe_dep">Xe đạp</label>
 
-                            <input type="checkbox" name="checkbox" id="wifi" value="3">
-                            <label for="wifi">Wifi</label>
+            <input type="checkbox" name="checkbox" id="wifi" value="3">
+            <label for="wifi">Wifi</label>
 
-                            <input type="checkbox" name="checkbox" id="khan-tam" value="4">
-                            <label for="khan-tam">khăn tắm</label>
+            <input type="checkbox" name="checkbox" id="khan-tam" value="4">
+            <label for="khan-tam">khăn tắm</label>
 
-                            <input type="checkbox" name="checkbox" id="phong-xong-hoi" value="5">
-                            <label for="phong-xong-hoi">Phòng xông hơi</label>
+            <input type="checkbox" name="checkbox" id="phong-xong-hoi" value="5">
+            <label for="phong-xong-hoi">Phòng xông hơi</label>
 
-                            <input type="checkbox" name="checkbox" id="khu-vui-choi" value="6">
-                            <label for="khu-vui-choi">Khu vui chơi trẻ em</label>
-
-                            @*@Html.TextBox("ten_phong", (String)ViewBag.so_phong, new { @class = "form-control", @readonly = "readonly" })*@
-                        </div>
-                    </div>
+            <input type="checkbox" name="checkbox" id="khu-vui-choi" value="6">
+            <label for="khu-vui-choi">Khu vui chơi trẻ em</label>-->
+                    @*@Html.TextBox("ten_phong", (String)ViewBag.so_phong, new { @class = "form-control", @readonly = "readonly" })*@
+                    <!--</div>
+    </div>-->
 
                     <div class="form-group">
                         @Html.Label("Thanh Toán", htmlAttributes: new { @class = "control-label col-md-3" })
@@ -124,37 +122,95 @@
                     <div class="form-group box-the-ngan-hang">
                         @Html.Label("Ngân Hàng", htmlAttributes: new { @class = "control-label col-md-3" })
                         <div class="col-md-12">
-                            <div class="vietcombank" style="float: left; margin: 0px 10px; ">
-                                <img src="~/hinh-anh/vietcombank.jpg" style="width: 150px; height: 150px;" />
-                            </div>
-                            <div class="vietcombank" style="float: left; margin: 0px 10px; ">
-                                <img src="~/hinh-anh/mbbank.png" style="width: 150px; height: 150px;" />
-                            </div>
-                            <div class="vietcombank" style="float: left; margin: 0px 10px; ">
-                                <img src="~/hinh-anh/momo.jpg" style="width: 150px; height: 150px;" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.Label("Đơn vị tính", htmlAttributes: new { @class = "control-label col-md-3" })
-                        <div class="box-custom" style="display:inline-block">
-                            <div class="">
-                                @Html.TextBox("don_vi_tinh", "USD", new { @readonly = "readonly", @id = "don_vi_tinh_usd", @type = "radio", @required = "required", @checked = "true" })
-                                @Html.Label("USD", htmlAttributes: new { @class = "control-label", @for = "don_vi_tinh_usd" })
-                            </div>
-                            <div class="">
-                                @Html.TextBox("don_vi_tinh", "VND", new { @readonly = "readonly", @id = "don_vi_tinh_vnd", @type = "radio", @required = "required" })
-                                @Html.Label("VND", htmlAttributes: new { @class = "control-label", @for = "don_vi_tinh_vnd" })
-                            </div>
+                            <style>
+                                .box-room {
+                                    position: fixed;
+                                    width: 100%;
+                                    width: 100%;
+                                    height: 100%;
+                                    top: 0;
+                                    left: 0;
+                                    text-align: center;
+                                    z-index: 9999;
+                                    background-color: rgba(0, 0, 0, 0.4);
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    display: none;
+                                }
 
+                                    .box-room img {
+                                        transform: scale(2.5);
+                                    }
+
+                                .custom-close {
+                                    font-size: 45px;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 20px;
+                                    color: #fff;
+                                }
+                            </style>
+                            <div class="vietcombank" style="float: left; margin: 0px 10px; ">
+                                <img src="~/hinh-anh/vietcombank.jpg" style="width: 150px; height: 150px;" onclick="RoomImage(1)" />
+                                <div class="box-room thanh-toan-1" onclick="RoomImageColse()">
+                                    <span class="close custom-close" onclick="RoomImageColse()">×</span>
+                                    <img src="~/hinh-anh/vietcombank.jpg" style="width: 300px; height: 250px;" />
+                                </div>
+
+                            </div>
+                            <div class="vietcombank" style="float: left; margin: 0px 10px; ">
+                                <img src="~/hinh-anh/mbbank.png" style="width: 150px; height: 150px;" onclick="RoomImage(2)" />
+                                <div class="box-room thanh-toan-2" onclick="RoomImageColse()">
+                                    <span class="close custom-close" onclick="RoomImageColse()">×</span>
+                                    <img src="~/hinh-anh/mbbank.png" style="width: 300px; height: 250px;" />
+                                </div>
+                            </div>
+                            <div class="vietcombank" style="float: left; margin: 0px 10px; ">
+                                <img src="~/hinh-anh/momo.jpg" style="width: 150px; height: 150px;" onclick="RoomImage(3)" />
+                                <div class="box-room thanh-toan-3" onclick="RoomImageColse()">
+                                    <span class="close custom-close" onclick="RoomImageColse()">×</span>
+                                    <img src="~/hinh-anh/momo.jpg" style="width: 300px; height: 250px;" />
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    @*<div class="form-group">
+            @Html.Label("Đơn vị tính", htmlAttributes: new { @class = "control-label col-md-3" })
+            <div class="box-custom" style="display:inline-block">
+                <div class="">
+                    @Html.TextBox("don_vi_tinh", "USD", new { @readonly = "readonly", @id = "don_vi_tinh_usd", @type = "radio", @required = "required", @checked = "true" })
+                    @Html.Label("USD", htmlAttributes: new { @class = "control-label", @for = "don_vi_tinh_usd" })
+                </div>
+                <div class="">
+                    @Html.TextBox("don_vi_tinh", "VND", new { @readonly = "readonly", @id = "don_vi_tinh_vnd", @type = "radio", @required = "required" })
+                    @Html.Label("VND", htmlAttributes: new { @class = "control-label", @for = "don_vi_tinh_vnd" })
+                </div>
+
+            </div>
+        </div>*@
                     <div class="form-group">
                         @Html.Label("Tiền Cọc", htmlAttributes: new { @class = "control-label col-md-3" })
-                        <div class="col-md-9">
-                            <label style="font-size: 15px;color:red" class="txt-note">Vui lòng thanh toán 50% hoặc 100%</label>
-                            @Html.TextBox("total_payment", null, new { @class = "form-control", @type = "number", @required = "required" })
+                        <div class="box-custom" style="display:inline-block">
+                            <div class="">
+                                @Html.TextBox("deposit", "1", new { @readonly = "readonly", @id = "don_vi_tinh_usd", @type = "radio", @required = "required", @checked = "true" })
+                                @Html.Label("50%", htmlAttributes: new { @class = "control-label", @for = "don_vi_tinh_usd" })
+
+                            </div>
+                            <div class="">
+                                @Html.TextBox("deposit", "2", new { @readonly = "readonly", @id = "don_vi_tinh_vnd", @type = "radio", @required = "required" })
+                                @Html.Label("Full", htmlAttributes: new { @class = "control-label", @for = "don_vi_tinh_vnd" })
+                            </div>                            
                         </div>
+
+                    </div>
+                    <div class="form-group thanh-tien-50">
+                        @Html.Label("Thành tiền", htmlAttributes: new { @class = "control-label col-md-3" })
+                        <div class="box-custom" style="display:inline-block">
+                            <div class="thanh-tien control-label">@((String)ViewBag.tong_tien50)</div>
+                            @*<input type="text" class="form-control total_payment" value="" readonly="readonly" />*@
+                        </div>
+
                     </div>
 
                     <div class="form-group">
@@ -224,7 +280,7 @@
                                     </td>
                                     <td>
                                         @*<a class="nav-link" href="@Url.Action("XoaPhieuDatPhong", "Account", new { id = item.ma_pdp })">Hủy</a>*@
-                                        <a class="nav-link btn-cancel-room" data-id="@item.ma_pdp" href="javascript:void(0)">Hủy</a>
+                                        @*<a class="nav-link btn-cancel-room" data-id="@item.ma_pdp" href="javascript:void(0)">Hủy</a>*@
                                         @*<button type="button" value="@item.ma_pdp" class="">Launch modal</button>*@
                                     </td>
                                 </tr>
@@ -248,7 +304,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p style=" font-size: 17px; margin: 0px;">Bạn sẽ phải chịu 100% phí đã thanh toán.</p>
+                <p style=" font-size: 17px; margin: 0px;">Booking không hoàn hủy,bạn sẽ phải chịu 100% phí đã thanh toán.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary btn-dong-y" style="margin: 0px !important; border: 1px solid #FBB448 !important; ">Đồng ý</button>
@@ -271,7 +327,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p style=" font-size: 17px; margin: 0px;">Bạn sẽ phải chịu 100% phí đã thanh toán.</p>
+                <p style=" font-size: 17px; margin: 0px;">Booking không hoàn hủy, bạn sẽ phải chịu 100% phí đã thanh toán.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary btn-dong-y" style="margin: 0px !important; border: 1px solid #FBB448 !important; ">Đồng ý</button>
@@ -324,7 +380,28 @@
                 $(".box-the-ngan-hang").hide();
             }
         });
+        $('input[type=radio][name=deposit]').change(function () {
+            if (this.value == '1') {
+                $(".thanh-tien-50").show();
+                //var totaltien50 = parseInt($(".tong-tien").val().replace(',',''))/2;
+                //$(".thanh-tien").text(totaltien50);
+            }
+            else if (this.value == '2') {
+                $(".thanh-tien-50").hide();
+            }
+        });
+       
     });
+    
+    function RoomImage(payment) {
+        $(".box-room").hide();
+        var text = ".thanh-toan-" + payment;
+        $(text).css("display", "inline-flex");
+    }
+    function RoomImageColse() {
+        $(".box-room").hide();
+       
+    }
     function CancelBook(id) {
         $.ajax({
             url: '/Account/XoaPhieuDatPhongUp',

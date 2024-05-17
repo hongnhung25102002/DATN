@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
+using System.Web.DynamicData;
 using System.Web.Mvc;
 using Newtonsoft.Json;
 using QLKS.Areas.Admin.Models;
@@ -19,7 +20,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
         // GET: HoaDon
         public ActionResult Index()
         {
-            var tblHoaDons = db.tblHoaDons.Where(t=>t.ma_tinh_trang==2).Include(t => t.tblNhanVien).Include(t => t.tblPhieuDatPhong)
+            var tblHoaDons = db.tblHoaDons.Where(t => t.ma_tinh_trang == 2).Include(t => t.tblNhanVien).Include(t => t.tblPhieuDatPhong)
                 .Include(t => t.tblTinhTrangHoaDon);
             double tong = 0;
             foreach (var item in tblHoaDons.ToList())
@@ -43,7 +44,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
                 query += " and ngay_tra_phong >= '" + beginDate + "'";
             if (!endDate.Equals(""))
                 query += " and ngay_tra_phong <= '" + endDate + "'";
-            
+
             dshd = db.tblHoaDons.SqlQuery(query).ToList();
             double tong = 0;
             foreach (var item in dshd)
@@ -184,44 +185,123 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             }
             base.Dispose(disposing);
         }
-        public ActionResult Result(String ma_pdp,String hoten1,String hoten2,String hoten3,String hoten4,String tuoi1,String tuoi2,String tuoi3,String tuoi4,int add_giuong)
+        public ActionResult Result(String ma_pdp, String hoten1, String hoten2, String hoten3, String hoten4, String tuoi1, String tuoi2, String tuoi3, String tuoi4, String add_giuong)
         {
             if (ma_pdp == null)
             {
                 return RedirectToAction("Index", "Index");
             }
             else
-            {                
-                    List<KhachHang> likh;
-                    tblPhieuDatPhong pt = db.tblPhieuDatPhongs.Find(Int32.Parse(ma_pdp));
-                    if (pt.thong_tin_khach_thue == null)
-                    {
-                        likh = new List<KhachHang>();
-                        likh.Add(new KhachHang("", ""));
-                    }
-                    else
-                    {
-                        likh = JsonConvert.DeserializeObject<List<KhachHang>>(pt.thong_tin_khach_thue);
-                    }
-                    if (!hoten1.Equals(""))
-                        likh.Add(new KhachHang(hoten1, tuoi1));
-                    if (!hoten2.Equals(""))
-                     likh.Add(new KhachHang(hoten2, tuoi2));
-                    if (!hoten3.Equals(""))
-                        likh.Add(new KhachHang(hoten3, tuoi3));
-                    if (!hoten4.Equals(""))
-                        likh.Add(new KhachHang(hoten4, tuoi4));
-                if (add_giuong > 0)
+            {
+                List<KhachHang> likh;
+                tblPhieuDatPhong pt = db.tblPhieuDatPhongs.Find(Int32.Parse(ma_pdp));
+                if (pt.thong_tin_khach_thue == null)
                 {
-                    pt.add_giuong = add_giuong;
-                    pt.price_add_giuong = (decimal)(pt.tblPhong.tblLoaiPhong.gia.Value * 0.3);
+                    likh = new List<KhachHang>();
+                    likh.Add(new KhachHang("", ""));
                 }
-                    pt.thong_tin_khach_thue = JsonConvert.SerializeObject(likh);
-                    db.Entry(pt).State = EntityState.Modified;
-                    db.SaveChanges();
-                
+                else
+                {
+                    likh = JsonConvert.DeserializeObject<List<KhachHang>>(pt.thong_tin_khach_thue);
+                }
+                decimal tongTienPhuThuTuoi = 0;
+                if (!hoten1.Equals("") && !string.IsNullOrEmpty(tuoi1))
+                {
+                    decimal pricePhu = 0;
+                    if (Convert.ToInt32(tuoi1) > 12)
+                    {
+                        pricePhu = (decimal)pt.tblPhong.tblLoaiPhong.gia.Value / 2;
+                    }
+                    tongTienPhuThuTuoi += pricePhu;
+                    var khach = new KhachHang()
+                    {
+                        hoten = hoten1,
+                        tuoi = tuoi1,
+                        tienphongPhu = pricePhu
+                    };
+                    likh.Add(khach);
+                }
+
+
+                if (!hoten2.Equals("") && !string.IsNullOrEmpty(tuoi2))
+                {
+                    decimal pricePhu = 0;
+                    if (Convert.ToInt32(tuoi2) > 12)
+                    {
+                        pricePhu = (decimal)pt.tblPhong.tblLoaiPhong.gia.Value / 2;
+                    }
+                    tongTienPhuThuTuoi += pricePhu;
+                    var khach = new KhachHang()
+                    {
+                        hoten = hoten2,
+                        tuoi = tuoi2,
+                        tienphongPhu = pricePhu
+                    };
+                    likh.Add(khach);
+                }
+                //if (!hoten2.Equals(""))
+                //    likh.Add(new KhachHang(hoten2, tuoi2));
+
+
+
+                //if (!hoten3.Equals(""))
+                //    likh.Add(new KhachHang(hoten3, tuoi3));
+
+                if (!hoten3.Equals("") && !string.IsNullOrEmpty(tuoi3))
+                {
+                    decimal pricePhu = 0;
+                    if (Convert.ToInt32(tuoi3) > 12)
+                    {
+                        pricePhu = (decimal)pt.tblPhong.tblLoaiPhong.gia.Value / 2;
+                    }
+                    tongTienPhuThuTuoi += pricePhu;
+                    var khach = new KhachHang()
+                    {
+                        hoten = hoten3,
+                        tuoi = tuoi3,
+                        tienphongPhu = pricePhu
+                    };
+                    likh.Add(khach);
+                }
+
+                //if (!hoten4.Equals(""))
+                //    likh.Add(new KhachHang(hoten4, tuoi4));
+
+
+                if (!hoten4.Equals("") && !string.IsNullOrEmpty(hoten4))
+                {
+                    decimal pricePhu = 0;
+                    if (Convert.ToInt32(tuoi4) > 12)
+                    {
+                        pricePhu = (decimal)pt.tblPhong.tblLoaiPhong.gia.Value / 2;
+                    }
+                    tongTienPhuThuTuoi += pricePhu;
+                    var khach = new KhachHang()
+                    {
+                        hoten = hoten4,
+                        tuoi = tuoi4,
+                        tienphongPhu = pricePhu
+                    };
+                    likh.Add(khach);
+                }
+
+
+                decimal phuthugiuong = 0;
+                if (!string.IsNullOrEmpty(add_giuong))
+                {
+                    pt.add_giuong = 1;
+                    phuthugiuong = (decimal)(pt.tblPhong.tblLoaiPhong.gia.Value * 0.3);
+                    pt.price_add_giuong = phuthugiuong;
+                }
+                pt.thong_tin_khach_thue = JsonConvert.SerializeObject(likh);
+                db.Entry(pt).State = EntityState.Modified;
+                db.SaveChanges();
+
                 tblHoaDon hd = new tblHoaDon();
                 hd.ma_pdp = Int32.Parse(ma_pdp);
+                hd.phu_thu = (double)(tongTienPhuThuTuoi + phuthugiuong);
+                hd.tien_phong = pt.tblPhong.tblLoaiPhong.gia.Value;
+                hd.tong_tien = (double)(tongTienPhuThuTuoi + phuthugiuong) + pt.tblPhong.tblLoaiPhong.gia.Value;
                 hd.ma_tinh_trang = 1;
                 try
                 {
@@ -269,7 +349,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             DateTime dateS = new DateTime(ngay_vao.Year, ngay_vao.Month, ngay_vao.Day, 12, 0, 0);
             DateTime dateE = new DateTime(ngay_ra.Year, ngay_ra.Month, ngay_ra.Day, 12, 0, 0);
 
-            Double gia =(Double) tblHoaDon.tblPhieuDatPhong.tblPhong.tblLoaiPhong.gia;
+            Double gia = (Double)tblHoaDon.tblPhieuDatPhong.tblPhong.tblLoaiPhong.gia;
 
             var songay = (dateE - dateS).TotalDays;
             if (dateS > ngay_vao)
@@ -279,7 +359,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             var ti_le_phu_thu = tblHoaDon.tblPhieuDatPhong.tblPhong.tblLoaiPhong.ti_le_phu_thu;
             var so_ngay_phu_thu = Math.Abs(Math.Ceiling((ngay_ra - ngay_du_kien).TotalDays));
 
-            System.Diagnostics.Debug.WriteLine("So ngay: "+so_ngay_phu_thu);
+            System.Diagnostics.Debug.WriteLine("So ngay: " + so_ngay_phu_thu);
             System.Diagnostics.Debug.WriteLine("Gia: " + gia);
             System.Diagnostics.Debug.WriteLine("Ti le: :" + ti_le_phu_thu);
 
@@ -292,12 +372,31 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             var tien_phong = songay * gia;
             ViewBag.tien_phong = tien_phong;
             ViewBag.so_ngay = songay;
+            ViewBag.TinhTrangThanhToan = tblHoaDon.tblPhieuDatPhong.deposit;
+
+
+            // tính người kèo theo lơn hơn 12 tuổi tính tiền như người lớn
+            var userPhu = tblHoaDon.tblPhieuDatPhong.thong_tin_khach_thue;
+            decimal phuthuUser = 0;
+            ViewBag.TienPhuThu = null;
+            if (!string.IsNullOrEmpty(userPhu))
+            {
+                var userPhuConvert = JsonConvert.DeserializeObject<List<KhachHang>>(userPhu);
+                if (userPhuConvert != null && userPhuConvert.Count > 0)
+                {
+                    phuthuUser =userPhuConvert.Sum(p => p.tienphongPhu);
+                    ViewBag.TienPhuThu = userPhuConvert.Sum(p => p.tienphongPhu);
+                    ViewBag.TienPhuThuStr = userPhuConvert.Sum(p => p.tienphongPhu) > 0 ? userPhuConvert.Sum(p => p.tienphongPhu).ToString("#,###"):""; 
+                }
+            }
 
             tblNhanVien nv = (tblNhanVien)Session["NV"];
-            if(nv!= null)
+            if (nv != null)
             {
                 ViewBag.ho_ten = nv.ho_ten;
             }
+
+
             List<tblDichVuDaDat> dsdv = db.tblDichVuDaDats.Where(u => u.ma_hd == id).ToList();
             ViewBag.list_dv = dsdv;
             double tongtiendv = 0;
@@ -308,9 +407,13 @@ namespace QLKS.Areas.Admin.Controllers.Admin
                 tongtiendv += t;
                 tt.Add(t);
             }
+           var addGiuong = tblHoaDon.tblPhieuDatPhong.price_add_giuong.HasValue &&  tblHoaDon.tblPhieuDatPhong.price_add_giuong.Value >0 ? (double)tblHoaDon.tblPhieuDatPhong.price_add_giuong.Value: 0;
             ViewBag.list_tt = tt;
             ViewBag.tien_dich_vu = tongtiendv;
-            ViewBag.tong_tien = tien_phong + tongtiendv + phuthu;
+            ViewBag.tong_tien50 = tien_phong / 2;
+            ViewBag.tong_tien = tien_phong + tongtiendv + (double)phuthuUser + addGiuong;
+            ViewBag.tong_tien_con_lai = tien_phong + tongtiendv + addGiuong  + (double)phuthuUser - tien_phong / 2;
+
             return View(tblHoaDon);
         }
         public ActionResult GoiDichVu(int? id)
@@ -320,7 +423,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             GoiDichVuModel mod = new GoiDichVuModel();
-            mod.dsDichVu = db.tblDichVus.Where(t=>t.ton_kho > 0).ToList();
+            mod.dsDichVu = db.tblDichVus.Where(t => t.ton_kho > 0).ToList();
             mod.dsDvDaDat = db.tblDichVuDaDats.Where(u => u.ma_hd == id).ToList();
             ViewBag.ma_hd = id;
             ViewBag.so_phong = db.tblHoaDons.Find(id).tblPhieuDatPhong.tblPhong.so_phong;
@@ -336,13 +439,13 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             int madv = Int32.Parse(ma_dv);
             int sol = Int32.Parse(so_luong);
             var ds = db.tblDichVuDaDats.Where(t => t.ma_hd == mahd).ToList();
-            
+
             try
             {
                 bool check = false;
-                foreach(var item in ds)
+                foreach (var item in ds)
                 {
-                    if(item.ma_dv == madv)
+                    if (item.ma_dv == madv)
                     {
                         item.so_luong += sol;
                         check = true;
@@ -389,7 +492,7 @@ namespace QLKS.Areas.Admin.Controllers.Admin
                 db.Entry(dv).State = EntityState.Modified;
                 db.SaveChanges();
             }
-            
+
             return RedirectToAction("GoiDichVu", "HoaDon", new { id = ma_hd });
         }
         public ActionResult XoaDichVu(String ma_hd, String del_id)
@@ -407,9 +510,9 @@ namespace QLKS.Areas.Admin.Controllers.Admin
         /// <returns></returns>
         /// 
 
-        public ActionResult XacNhanThanhToan(String ma_hd, String tien_phong, String tien_dich_vu,String phu_thu, String tong_tien)
+        public ActionResult XacNhanThanhToan(String ma_hd, String tien_phong, String tien_dich_vu, String tong_tien)
         {
-            if (ma_hd == null || tien_phong == null || tien_dich_vu == null || phu_thu == null || tong_tien == null)
+            if (ma_hd == null || tien_phong == null || tien_dich_vu == null || tong_tien == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
@@ -417,11 +520,11 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             {
                 tblHoaDon hd = db.tblHoaDons.Find(Int32.Parse(ma_hd));
                 tblNhanVien nv = (tblNhanVien)Session["NV"];
-                if(nv!=null)
+                if (nv != null)
                     hd.ma_nv = nv.ma_nv;
                 hd.tien_phong = Double.Parse(tien_phong);
                 hd.tien_dich_vu = Double.Parse(tien_dich_vu);
-                hd.phu_thu = Double.Parse(phu_thu);
+                //hd.phu_thu = Double.Parse(phu_thu);
                 hd.tong_tien = Double.Parse(tong_tien);
                 hd.ma_tinh_trang = 2;
                 hd.ngay_tra_phong = DateTime.Now;
@@ -501,9 +604,9 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             ViewBag.dateMax = dt;
             return View(pdp);
         }
-        public ActionResult ResultGiaHan(String ma_pdp,String ngay_ra)
+        public ActionResult ResultGiaHan(String ma_pdp, String ngay_ra)
         {
-            if(ma_pdp==null || ngay_ra == null)
+            if (ma_pdp == null || ngay_ra == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
@@ -515,9 +618,9 @@ namespace QLKS.Areas.Admin.Controllers.Admin
                 ViewBag.result = "success";
                 ViewBag.ngay_ra = ngay_ra;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                ViewBag.result = "error: "+e;
+                ViewBag.result = "error: " + e;
             }
             return View();
         }
@@ -536,12 +639,12 @@ namespace QLKS.Areas.Admin.Controllers.Admin
             }
             tblPhieuDatPhong pdp = db.tblPhieuDatPhongs.Find(tblHoaDon.ma_pdp);
 
-            var li = db.tblPhongs.Where(t => t.ma_tinh_trang==1 && !(db.tblPhieuDatPhongs.Where(m => (m.ma_tinh_trang == 1 || m.ma_tinh_trang ==2) && m.ngay_ra > DateTime.Now && m.ngay_vao < pdp.ngay_ra)).Select(m => m.ma_phong).ToList().Contains(t.ma_phong));
+            var li = db.tblPhongs.Where(t => t.ma_tinh_trang == 1 && !(db.tblPhieuDatPhongs.Where(m => (m.ma_tinh_trang == 1 || m.ma_tinh_trang == 2) && m.ngay_ra > DateTime.Now && m.ngay_vao < pdp.ngay_ra)).Select(m => m.ma_phong).ToList().Contains(t.ma_phong));
             ViewBag.ma_phong_moi = new SelectList(li, "ma_phong", "so_phong");
             return View(pdp);
         }
 
-        public ActionResult ResultDoiPhong(String ma_pdp,String ma_phong_cu, String ma_phong_moi)
+        public ActionResult ResultDoiPhong(String ma_pdp, String ma_phong_cu, String ma_phong_moi)
         {
             if (ma_pdp == null || ma_phong_cu == null || ma_phong_moi == null)
             {

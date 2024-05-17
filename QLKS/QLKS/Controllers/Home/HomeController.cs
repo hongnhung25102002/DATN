@@ -188,6 +188,7 @@ namespace QLKS.Controllers
                 totalTien += (decimal)p.tblLoaiPhong.gia.Value;
             }
             ViewBag.tong_tien = totalTien > 0 ?totalTien.ToString("#,###"):"";
+            ViewBag.tong_tien50 = totalTien > 0 ? (totalTien/2).ToString("#,###") : "";
             ViewBag.so_phong = sp;
             var liP = db.tblPhieuDatPhongs.Where(u => u.ma_kh == kh.ma_kh && u.ma_tinh_trang == 1).ToList();
             return View(liP);
@@ -207,7 +208,7 @@ namespace QLKS.Controllers
                 }
             }
         }
-        public ActionResult Result(String ma_kh, String ngay_vao, String ngay_ra, String ma_phong,String don_vi_tinh, int payment_type, decimal total_payment)
+        public ActionResult Result(String ma_kh, String ngay_vao, String ngay_ra, String ma_phong,String don_vi_tinh, int payment_type,int deposit)
         {
             if (ma_kh == null || ngay_vao == null || ngay_ra == null || ma_phong == null)
             {
@@ -224,7 +225,8 @@ namespace QLKS.Controllers
                 tgd.ngay_ra = (DateTime.ParseExact(ngay_ra, "dd/MM/yyyy", CultureInfo.InvariantCulture)).AddHours(12);
                 tgd.don_vi_tinh = don_vi_tinh;
                 tgd.payment_type = payment_type;
-                tgd.total_payment = total_payment;
+                //tgd.total_payment = total_payment;
+                tgd.deposit = deposit;
                 //tgd.ma_nhan_phong = ma_kh + ngay_vao.Replace("/","");
                 ViewBag.MaCode = "";
                 try
@@ -246,6 +248,10 @@ namespace QLKS.Controllers
                             else if (phong.tblTang.ten_tang.Trim().ToLower() == "Tầng 3".Trim().ToLower())
                             {
                                 tgd.ma_nhan_phong = "C/c" + phong.so_phong + ma_kh + ngay_vao.Replace("/", "");
+                            }
+                            else if (phong.tblTang.ten_tang.Trim().ToLower() == "Tầng 4".Trim().ToLower())
+                            {
+                                tgd.ma_nhan_phong = "D/d" + phong.so_phong + ma_kh + ngay_vao.Replace("/", "");
                             }
                         }
                         db.tblPhieuDatPhongs.Add(tgd);

@@ -46,7 +46,7 @@ namespace QLKS.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "mo_ta,gia,ti_le_phu_thu,anh")] tblLoaiPhong tblLoaiPhong)
+        public ActionResult Create([Bind(Include = "mo_ta,gia,tien_ich,so_luong_nguoi,anh")] tblLoaiPhong tblLoaiPhong)
         {
             if (ModelState.IsValid)
             {
@@ -80,12 +80,18 @@ namespace QLKS.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "loai_phong,mo_ta,gia,ti_le_phu_thu,anh")] tblLoaiPhong tblLoaiPhong)
+        public ActionResult Edit([Bind(Include = "loai_phong,mo_ta,gia,tien_ich,so_luong_nguoi,anh")] tblLoaiPhong tblLoaiPhong)
         {
             if (ModelState.IsValid)
             {
                 if (tblLoaiPhong.anh == null)
                     tblLoaiPhong.anh = "[\"/Content/Images/Phong/default.png\"]";
+                //var loai_phong = db.tblLoaiPhongs.Where(p => p.loai_phong == tblLoaiPhong.loai_phong).FirstOrDefault();
+
+                //if (loai_phong != null)
+                //{
+                //    tblLoaiPhong.so_luong_nguoi = loai_phong.so_luong_nguoi;
+                //}
                 db.Entry(tblLoaiPhong).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

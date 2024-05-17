@@ -4,7 +4,9 @@
     ViewBag.Title = "List Rooms";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
-
+<style>
+   
+</style>
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
         <a href="@Url.Action("Index","Index")">Admin</a>
@@ -20,7 +22,7 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered table-striped table-hover" id="dataTable" cellspacing="0">
+            <table class="table table-bordered table-striped table-hover custom-table" id="dataTable" cellspacing="0">
                 <thead>
                     <tr>
                         <th></th>
@@ -30,13 +32,16 @@
                         <th>
                             Giá
                         </th>
-                        @*<th>
-                            Tỉ lệ phụ thu
-                        </th>*@
+                        <th>
+                            Tiện ích
+                        </th>
+                        <th width="150px">
+                            Số lượng người
+                        </th>
                         @if (Session["NV"] != null && ((QLKS.Models.tblNhanVien)Session["NV"]).ma_chuc_vu <= 2)
-    {
-                    <th></th>
-}
+                        {
+                            <th></th>
+                        }
                     </tr>
                 </thead>
                 <tbody>
@@ -46,13 +51,13 @@
                     <tr>
                         <td>
                             @{
-            String m = (item.anh);
-            try
-            {
-                List<String> a = Newtonsoft.Json.JsonConvert.DeserializeObject<List<String>>(m);
-                    <div><img src="@a[0]" height="50px" /></div>
-}
-catch { }
+                                String m = (item.anh);
+                                try
+                                {
+                                    List<String> a = Newtonsoft.Json.JsonConvert.DeserializeObject<List<String>>(m);
+                                    <div><img src="@a[0]" height="50px" /></div>
+                                }
+                                catch { }
                             }
                         </td>
                         <td>
@@ -61,16 +66,19 @@ catch { }
                         <td>
                             @Html.DisplayFor(modelItem => item.gia)
                         </td>
-                        @*<td>
-                            @Html.DisplayFor(modelItem => item.ti_le_phu_thu)
-                        </td*@>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.tien_ich)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.so_luong_nguoi)
+                        </td>
                         @if (Session["NV"] != null && ((QLKS.Models.tblNhanVien)Session["NV"]).ma_chuc_vu <= 2)
-    {
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.loai_phong }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.loai_phong })
-                    </td>
-}
+                        {
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.loai_phong }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.loai_phong })
+                            </td>
+                        }
                     </tr>
                     }
                 </tbody>
